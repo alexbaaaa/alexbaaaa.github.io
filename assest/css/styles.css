@@ -49,15 +49,13 @@ table {
 /**
     FONTS
 */
-.hero {
-    height: 100vh;
-    width: 100vw;
-}
-.header {
-    height: 300px;
-    width: 100%;
-    background-color: beige;
-    display: flex;
-    flex-flow: row;
+
+h1 {
+    font-size: 110px;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+/**
