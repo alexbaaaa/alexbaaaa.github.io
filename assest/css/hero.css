@@ -25,6 +25,12 @@
         align-self: flex-start;
         cursor: pointer;
     }
+    .img_marta {
+        display: none;
+    }
+    .title_proyect_movil {
+        display: none;
+    }
 }
 
 .proyect {

@@ -56,6 +56,7 @@ table {
   --texto-secundario: #A4A4A4;
 	/* Margin*/
   --margen: 2.25rem;
+  --margen-movil: 1.25rem;
 }
 
 /* -------  */
@@ -78,13 +79,13 @@ table {
 
 
 h1 {
-    font-size: 110px;
+    font-size: clamp(5.3125rem, 4.7917rem + 1.7361vw, 6.875rem);
 	font-family: 'InterMedium';
 	text-transform: uppercase;
 }
 
 h2 {
-    font-size: 24px;
+	font-size: 1.5rem;
 	font-family: 'playfairMedium';
 	color: var(--texto-secundario);
 }
