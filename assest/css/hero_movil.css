@@ -14,8 +14,18 @@
             margin-left: var(--margen-movil);
             align-self: center;
             h1 {
-                text-align: center;
+                text-align: left;
             }
+            :nth-child(3) {
+                margin-top: 1rem;
+            }
+            .movil_name {
+                display: block;
+                font-size: 2rem;
+                line-height: 1.8rem;
+                color: var(--texto-secundario);
+            }
+
         }
         .menu {
             flex: 1;

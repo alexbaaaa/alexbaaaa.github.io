@@ -31,6 +31,9 @@
     .title_proyect_movil {
         display: none;
     }
+    .movil_name {
+        display: none;
+    }
 }
 
 .proyect {
