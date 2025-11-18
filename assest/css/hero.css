@@ -1,23 +1,106 @@
 .hero {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .header {
-    height: 300px;
     width: 100%;
-    background-color: beige;
+    flex: 1;
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
     align-content: center;
     .name {
-        border: 1px solid blue;
-        
+        margin-left: var(--margen);
+        margin-top: var(--margen);
     }
     .menu {
-        border: 1px solid red;
-        margin-right: 0;
+        height: 100%;
+        line-height: 2rem;
+        text-align: right;
+        text-transform: uppercase;
+        margin-right: var(--margen);
+        margin-top: var(--margen);
+        align-self: flex-start;
+        cursor: pointer;
+    }
+}
+
+.proyect {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        height: 100%;
+        flex: 1;
+        h2 {
+            color: black;
+            margin-left: var(--margen);
+            cursor: pointer;
+            img {
+                position: relative;
+                top: 4px;
+                left: 5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: var(--texto-secundario);
+        }
+        .title_list {
+            margin-top: 1rem;
+            margin-left: calc(var(--margen) + 1rem);
+            line-height: 1.6rem;
+        }
+    }
+    .feature_proyects {
+        flex: 2;
+        align-self: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+        margin-left: 5rem;
+        gap: 2.25rem;
+        
+        h2 {
+            flex: 1;
+        }
+        .feature_img {
+            width: 533px;
+            flex: 1 0 68px;
+        }
+        :nth-child(2) {
+            background-image: url("../img/hero/pexels-jakubzerdzicki-22610381.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        :nth-child(3) {
+            background-image: url("../img/hero/pexels-spacex-23763.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        :nth-child(4) {
+            background-image: url("../img/hero/pexels-freestockpro-12932191.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+    }
+    .copyright {
+        position: absolute;
+        right: var(--margen);
+        bottom: var(--margen);
     }
 }
 

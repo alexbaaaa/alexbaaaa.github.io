@@ -45,17 +45,48 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*---------------------------------------*/
 
+/**
+	VARIABLES
+*/
+
+:root {
+	/*Colors*/
+  --texto-secundario: #A4A4A4;
+	/* Margin*/
+  --margen: 2.25rem;
+}
+
+/* -------  */
 /**
     FONTS
 */
 
+/*  font-face   */
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('../fonts/inter/Inter_18pt-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairMedium';
+    src: url('../fonts/playfair/PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
+/*  -------   */
+
+
 h1 {
     font-size: 110px;
+	font-family: 'InterMedium';
+	text-transform: uppercase;
 }
 
 h2 {
     font-size: 24px;
+	font-family: 'playfairMedium';
+	color: var(--texto-secundario);
 }
 
 /**
