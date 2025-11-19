@@ -23,7 +23,6 @@
                 display: flex;
                 font-size: 1.5rem;
                 line-height: 1.8rem;
-border: 1px solid red;
                 color: var(--texto-secundario);
             }
 
