@@ -1,0 +1,78 @@
+.contact_page {
+    width: 100vw;
+    height: 100vh;
+    background-color: #006B6B;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    
+    .contact_title {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        h1 {
+            margin-right: var(--margen);
+            font-size: 150px;
+            color: white;
+            span {
+                font-size: 85px;
+                font-family: 'InterExtralight';
+            }
+        }
+    }
+
+    .contact_body {
+        width: 100%;
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: white;
+            
+        }
+
+        .mensage {
+            flex: 1;
+            margin-left:calc(var(--margen)*2);
+
+            
+        }
+        .social_media {
+            flex: 1;
+            margin-left: var(--margen);
+            ul {
+                border: 1px solid red;
+                padding-top: 0;
+                li {
+                    border: 1px solid purple;
+                }
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                position: relative;
+                top:12.5px;
+                margin-right: 0.9rem;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+    .Close_button {        
+        position: absolute;
+        top: var(--margen);
+        left: var(--margen);
+    }
+    .copyright {
+        position: absolute;
+        bottom: var(--margen);
+        right: var(--margen);
+    }
+}

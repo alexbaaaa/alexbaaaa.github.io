@@ -71,6 +71,10 @@ table {
     src: url('../fonts/inter/Inter_18pt-Medium.ttf') format('truetype');
 }
 @font-face {
+    font-family: 'InterExtralight';
+    src: url('../fonts/inter/Inter_24pt-ExtraLight.ttf') format('truetype');
+}
+@font-face {
     font-family: 'PlayfairMedium';
     src: url('../fonts/playfair/PlayfairDisplay-Medium.ttf') format('truetype');
 }
