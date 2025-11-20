@@ -38,10 +38,15 @@
                 font-size: 2rem;
             }
             :nth-child(1) {
-                margin-left: var(--margen-movil);
+                margin-right: var(--margen-movil);
+                order: 1;
+                text-align: right;
+                border: 1px solid red;
             }
             :nth-child(2) {
-                margin-right: var(--margen-movil);
+                order: 0;
+                margin-left: var(--margen-movil);
+                border: 1px solid black;
             }
         }
         .img_marta {

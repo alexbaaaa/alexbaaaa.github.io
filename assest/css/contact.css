@@ -13,6 +13,7 @@
         justify-content: end;
 
         h1 {
+            margin-top: var(--margen);
             margin-right: var(--margen);
             font-size: 150px;
             color: white;
@@ -32,24 +33,42 @@
 
         h2 {
             color: white;
-            
+            font-size: 2rem;
+        }
+        label  {
+            font-size: 1rem;
+            color: white;
+        }
+        a {
+            font-size: 1.5rem;
         }
 
         .mensage {
             flex: 1;
+            height: 50%;
             margin-left:calc(var(--margen)*2);
-
+            display: flex;
+            flex-flow: column nowrap;
+            gap: var(--margen);
+           
+            form {
+                flex: 2;
+            }
             
         }
         .social_media {
             flex: 1;
+            height: 50%;
             margin-left: var(--margen);
+            display: flex;
+            flex-flow: column nowrap;
+            gap: var(--margen);
+            
             ul {
-                border: 1px solid red;
+                flex-shrink: 1;
                 padding-top: 0;
-                li {
-                    border: 1px solid purple;
-                }
+                line-height: 2rem;
+                
             }
             img {
                 width: 40px;
@@ -59,6 +78,7 @@
                 margin-right: 0.9rem;
             }
             a {
+                font-family: 'PlayfairSemiBold';
                 text-decoration: none;
                 color: white;
                 font-size: 24px;

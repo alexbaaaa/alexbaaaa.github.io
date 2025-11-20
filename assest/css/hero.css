@@ -84,7 +84,7 @@
         }
         .feature_img {
             width: 533px;
-            flex: 1 0 68px;
+            flex: 0 2 68px;
             transition: all 0.8s ease-in-out;
             overflow: hidden;
             h3 {
@@ -97,7 +97,6 @@
         }
         .feature_img:hover {
             filter: brightness(.7);
-            flex-shrink: 1.5 ;
             h3 {
                 bottom: -45px;
             }

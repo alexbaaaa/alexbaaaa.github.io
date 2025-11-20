@@ -78,6 +78,10 @@ table {
     font-family: 'PlayfairMedium';
     src: url('../fonts/playfair/PlayfairDisplay-Medium.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'PlayfairSemiBold';
+    src: url('../fonts/playfair/PlayfairDisplay-SemiBold.ttf') format('truetype');
+}
 
 /*  -------   */
 
