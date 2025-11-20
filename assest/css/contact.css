@@ -15,7 +15,7 @@
         h1 {
             margin-top: var(--margen);
             margin-right: var(--margen);
-            font-size: 150px;
+            font-size: clamp(5.3125rem, 4.3427rem + 4.1935vw, 9.375rem);
             color: white;
             span {
                 font-size: 85px;
