@@ -38,7 +38,7 @@
 
 .proyect {
     width: 100%;
-    flex: 2;
+    flex: 2 1;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -70,7 +70,7 @@
         }
     }
     .feature_proyects {
-        flex: 2;
+        flex: 2 4;
         align-self: flex-start;
         display: flex;
         flex-flow: column nowrap;
@@ -99,6 +99,7 @@
             filter: brightness(.7);
             h3 {
                 bottom: -45px;
+                filter: none;
             }
         }
         :nth-child(2) {
