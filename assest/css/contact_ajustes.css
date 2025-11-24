@@ -1,0 +1,14 @@
+@media (max-width: 1300px) {
+    .contact_title {
+        border: 1px solid red;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+        span {}
+    }
+    .contact_body {
+        flex-flow: column nowrap;
+    }
+
+}

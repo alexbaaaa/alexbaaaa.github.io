@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        transition: all 1s ease-in-out;
         h2 {
             color: white;
             font-size: 2rem;
@@ -46,7 +46,7 @@
         .mensage {
             flex: 1;
             height: 50%;
-            margin-left:calc(var(--margen)*2);
+            margin-left:calc(var(--margen)*4);
             display: flex;
             flex-flow: column nowrap;
             gap: var(--margen);
@@ -55,19 +55,17 @@
                 width: 50%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 50px 100px 50px;
+                grid-template-rows: 50px 50px 50px;
+                gap: 1rem;
                 z-index: 1;
                 .grid3 {
-                    grid-column: 1/3;
-                    align-content: end;
+                    grid-column: 1/2;
+                    margin-top: 1rem;
                 }
-                .grid3 input {
-                    width: 100%;
-                    color: white;
-                }
-               
                
                 button {
+                    grid-column: 1/2;
+                    grid-row: inherit;
                     border: none;
                     outline: none;
                     background: none;
@@ -87,15 +85,17 @@
                 }
 
                 .wave-group .input {
-                    font-size: 16px;
+                    font-size: 1rem;
+                    font-family: 'PlayfairRegular';
                     padding: 10px 10px 10px 5px;
                     display: block;
                     width: 200px;
                     border: none;
                     border-bottom: 1px solid white;
                     background: transparent;
-                }
+                    color: white;
 
+                }
                 .wave-group .input:focus {
                     outline: none;
                 }
@@ -104,7 +104,6 @@
                     color: white;
                     font-size: 1rem;
                     font-family: 'PlayfairRegular';
-                    font-weight: normal;
                     position: absolute;
                     pointer-events: none;
                     left: 5px;
@@ -127,7 +126,7 @@
                 .wave-group .bar {
                     position: relative;
                     display: block;
-                    width: 200px;
+                    width: 100%;
                 }
 
                 .wave-group .bar:before,.wave-group .bar:after {
@@ -136,7 +135,7 @@
                     width: 0;
                     bottom: 1px;
                     position: absolute;
-                    background: var(--texto-secundario);
+                    background: white;
                     transition: 0.2s ease all;
                     -moz-transition: 0.2s ease all;
                     -webkit-transition: 0.2s ease all;
@@ -165,7 +164,7 @@
         .social_media {
             flex: 1;
             height: 50%;
-            margin-left: var(--margen);
+            margin-left: var(--margen)*2;
             display: flex;
             flex-flow: column nowrap;
             gap: var(--margen);
