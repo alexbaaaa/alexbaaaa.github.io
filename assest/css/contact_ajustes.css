@@ -22,9 +22,6 @@
                 text-align: center;
                 margin: 0;
                 margin-top: 5rem;
-                span {
-                    font-size: 70px;
-                }
             }
         }
         .contact_body {
@@ -52,9 +49,8 @@
                     text-align: center;
                 }
                 ul {
-                    display: grid;
                     grid-template-columns: 1fr 1fr;
-                    gap: 1rem;
+                    column-gap: 2rem;
                 }
             }
         }
@@ -72,6 +68,22 @@
         }
     }
 }
-@media (max-width: ) {
-    
+@media (max-width: 560px) {
+    .contact_page {
+        .contact_body {
+            .mensage {
+                form {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+        .social_media {
+            h2 {
+                display: none;
+            }
+            ul {
+                
+            }
+        }
+    }
 }
