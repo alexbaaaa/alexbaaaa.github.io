@@ -103,19 +103,19 @@
             }
         }
         :nth-child(2) {
-            background-image: url("../img/hero/pexels-jakubzerdzicki-22610381.jpg");
+            background-image: url("../img/hero/img01.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         :nth-child(3) {
-            background-image: url("../img/hero/pexels-spacex-23763.jpg");
+            background-image: url("../img/hero/img03.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         :nth-child(4) {
-            background-image: url("../img/hero/pexels-freestockpro-12932191.jpg");
+            background-image: url("../img/hero/img07.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
