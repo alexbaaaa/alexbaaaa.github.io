@@ -49,6 +49,7 @@
                     text-align: center;
                 }
                 ul {
+                    display: grid;
                     grid-template-columns: 1fr 1fr;
                     column-gap: 2rem;
                 }
@@ -80,6 +81,30 @@
         .social_media {
             h2 {
                 display: none;
+            }
+            ul {
+                display: grid;
+                column-gap: 1rem;
+                margin: .5rem;
+                span {
+                    display: none;
+                }
+                img {
+                    margin-right: 0;
+                    top: 0;
+                }
+                :nth-child(1){
+                    grid-column: 1/2;
+                }   
+                :nth-child(2){
+                    grid-column: 2/3;
+                }   
+                :nth-child(3){
+                    grid-column: 3/4;
+                }   
+                :nth-child(4){
+                    grid-column: 4/5;
+                }   
             }
         }
     }

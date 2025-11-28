@@ -1,6 +1,5 @@
 .body {
     margin-top: 5rem;
-    width: 100vw;
     box-sizing: border-box;
 
     .S01 {color: #FFA4C0;}
@@ -15,7 +14,7 @@
         height: 100vh;
         display: flex;
         .section_body {
-            flex: 1;
+            flex: 1 1;
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
@@ -53,7 +52,7 @@
         }
 
         .section_img {
-            flex: 1;
+            flex: 1 1;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
