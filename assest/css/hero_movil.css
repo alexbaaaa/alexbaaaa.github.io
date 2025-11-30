@@ -41,12 +41,10 @@
                 margin-right: var(--margen-movil);
                 order: 1;
                 text-align: right;
-                border: 1px solid red;
             }
             :nth-child(2) {
                 order: 0;
                 margin-left: var(--margen-movil);
-                border: 1px solid black;
             }
         }
         .img_marta {

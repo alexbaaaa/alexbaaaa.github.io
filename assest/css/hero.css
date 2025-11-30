@@ -1,5 +1,7 @@
 .hero {
     height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -30,6 +32,8 @@
         margin-top: var(--margen);
         align-self: flex-start;
         cursor: pointer;
+        transition: all 1s ease-in-out;
+
     }
     .img_marta {
         display: none;
@@ -84,7 +88,6 @@
         align-items: start;
         margin-left: 5rem;
         gap: 2.25rem;
-        
         h2 {
             flex: 1;
         }

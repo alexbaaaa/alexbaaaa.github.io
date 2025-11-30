@@ -1,7 +1,10 @@
 .contact_page {
+    position: absolute;
+    left: 100vw;
     width: 100vw;
     height: 100vh;
     background-color: #006B6B;
+    z-index: 999;
     
     display: flex;
     flex-flow: column nowrap;
@@ -192,13 +195,15 @@
             }
         }
     }
-    .Close_button {        
+    .Close_button {      
         position: absolute;
         top: var(--margen);
         left: var(--margen);
+        cursor: pointer;
     }
     .copyright {
         position: absolute;
+        color :red;
         bottom: var(--margen);
         right: var(--margen);
     }
