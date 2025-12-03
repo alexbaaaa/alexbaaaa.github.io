@@ -20,7 +20,7 @@
             justify-content: space-between;
             h1 {
                 font-family: 'InterBold';
-                font-size: 90px;
+                font-size: clamp(3.125rem, -0.2287rem + 4.878vw, 5.625rem);
                 margin: var(--margen);
                 cursor: pointer;
             }

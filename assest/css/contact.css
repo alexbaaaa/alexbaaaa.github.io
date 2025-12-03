@@ -1,8 +1,11 @@
 .contact_page {
     position: absolute;
+    
     left: 100vw;
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     background-color: #006B6B;
     z-index: 999;
     
@@ -80,6 +83,10 @@
                     padding-left: 0;
                     text-align: left;
                     margin-top: 4rem;
+                    cursor: pointer;
+                }
+                botton::active {
+                    transform: translateY(2rem);
                 }
                 /* ANIMACION MENSAGE*/
                 /* From Uiverse.io by AbanoubMagdy1 */ 

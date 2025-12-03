@@ -9,8 +9,9 @@
                 flex: 3;
                 margin-top: 79px;
                 margin-left: 0;
-                align-self: center;
-                text-align: center;
+                align-self: flex-start;
+                text-align: left;
+                border: 1px solid red;
             }
             .menu {
                 flex: 1;
@@ -46,5 +47,10 @@
         .copyright {
             display: none;
         }
+    }
+}
+@media (max-height: 800px){
+    .title {
+        margin-top: 5rem;
     }
 }
