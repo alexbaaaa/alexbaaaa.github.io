@@ -1,0 +1,35 @@
+@media (max-width: 1100px ){
+    .body  {
+        .section {
+            flex-flow: column;
+            .section_body {
+                flex: 0.4;
+                flex-flow: row nowrap;
+                align-items: center;
+                h1 {
+                    align-self: baseline;
+                    font-size: clamp(1.5625rem, 0.7705rem + 3.4247vw, 3.125rem);
+                }
+                .open {
+                    display: block;
+                }
+                .close {
+                    display: block;
+                    opacity: 0;
+                }
+            }
+            .section_img {
+                transform: translatey(300px);
+            }
+        }
+        .order {
+            .section_body {
+                order: 0;
+                align-items: start;
+            }
+            .section_img {
+                order: 1;
+            }
+        }
+    }
+}

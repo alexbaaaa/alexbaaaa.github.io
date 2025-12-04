@@ -15,7 +15,23 @@ export class Anime {
     }
 
     static open(open) {
-        console.log(open);
+        gsap.to(".body_number", {
+            x: "-40vw",
+            duration: 1,
+        })
+        gsap.to(".body_tite",{
+            let: "2rem",
+            duration: 1
+        });
+
+        open.style.opacity = 0;
+        let close = document.getElementsByClassName("close");
+        Array.from(close).forEach((element) => {
+            element.style.opacity = 1;
+        });
+    }
+    static close() {
+
     }
     static hola() {
         gsap.to(".prueba", {

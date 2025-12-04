@@ -13,8 +13,10 @@
     .section {
         height: 100vh;
         display: flex;
+        overflow: hidden;
         .section_body {
             flex: 1 1;
+            position: relative;
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
@@ -24,6 +26,22 @@
                 margin: var(--margen);
                 cursor: pointer;
             }
+            .open {
+                display: none;
+                position: absolute;
+                cursor: pointer;
+                bottom: var(--margen);
+                right: var(--margen);
+            }
+            .close {
+                display: none;
+                position: absolute;
+                cursor: pointer;
+                bottom: var(--margen);
+                left: var(--margen);
+                transition: all 1s ease-in-out;
+            }
+
 
             .section_text {
                 display: none;
@@ -54,6 +72,7 @@
 
         .section_img {
             flex: 1 1;
+            transform: translateY(500px);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

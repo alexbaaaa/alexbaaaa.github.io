@@ -11,7 +11,7 @@
     bottom: -30px;
     left: var(--margen);
     opacity: 0;
-    
+    z-index: 99;
     a {
         text-decoration: none;
         transition: all .5s ease-in-out;
