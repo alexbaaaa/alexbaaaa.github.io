@@ -33,3 +33,28 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .body {
+        .section {
+            height: 50vh;
+            .section_body {
+                flex: 2;
+            }
+            .section_img {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .body {
+        .section {
+            height: auto;
+            .section_img {
+                display: none;
+            }
+        }
+    }
+}

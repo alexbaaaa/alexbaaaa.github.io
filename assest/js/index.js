@@ -4,6 +4,12 @@ let contact = document.getElementById("contact");
 let contact_button = document.getElementById("contact_button");
 let close_button = document.getElementById("close_button");
 let open = document.getElementById("open");
+let close = document.getElementById("close");
+let bodyNumberAll = document.querySelectorAll(".body_number");
+let bodyTitleAll = document.querySelectorAll(".body_title");
+
+let bodyNumber = Array.from(bodyNumberAll);
+let bodyTitle = Array.from(bodyTitleAll);
 
 contact_button.addEventListener("click", ()=>{
     Anime.curtain(contact, 0, 1);
@@ -14,6 +20,9 @@ close_button.addEventListener("click", ()=>{
 
 open.addEventListener("click", ()=> {
     Anime.open(open);
+})
+close.addEventListener("click", () => {
+    Anime.close(close);
 })
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,17 +37,34 @@ gsap.to(".back_top", {
         toggleActions: "play none none reverse"
     }
 });
-
-gsap.from(".fadeIn", {
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: ".fadeIn",
-        start: "top center", 
-        toggleActions: "play none none reverse"
-    }
+bodyNumber.forEach( (bodyNumber, index) => {
+    index += 1;
+    gsap.from(bodyNumber, {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".S0"+index,
+            start: "top center", 
+            toggleActions: "play none none reverse"
+        }
+    });
 });
+bodyTitle.forEach( (bodyTitle, index) => {
+    index += 1;
+    gsap.from(bodyTitle, {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: ".S0"+index,
+            start: "top 20%", 
+            toggleActions: "play none none reverse"
+        }
+    });
+});
+
+
 gsap.from(".fadeOpen", {
     duration: 1,
     x: "-100vw", 
@@ -49,16 +75,18 @@ gsap.from(".fadeOpen", {
         toggleActions: "play none none reverse"
     }
 });
-let img = document.querySelectorAll(".section_img");
 
-gsap.utils.toArray(img).forEach(img =>{
+let img = Array.from(document.querySelectorAll(".section_img"));
+
+img.forEach((img, index) =>{
+    index += 1;
     gsap.to(img, {
         duration: 1,
         opacity: 1,
         y: 0, 
         ease: "power2.out",
         scrollTrigger: {
-            trigger: ".section_img",
+            trigger: ".S0"+index,
             start: "top bottom", 
             toggleActions: "play none none reverse"
         }

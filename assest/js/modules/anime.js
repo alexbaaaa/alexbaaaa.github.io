@@ -19,8 +19,8 @@ export class Anime {
             x: "-40vw",
             duration: 1,
         })
-        gsap.to(".body_tite",{
-            let: "2rem",
+        gsap.to(".body_title",{
+            left: "2rem",
             duration: 1
         });
 
@@ -30,8 +30,8 @@ export class Anime {
             element.style.opacity = 1;
         });
     }
-    static close() {
-
+    static close(open) {
+        
     }
     static hola() {
         gsap.to(".prueba", {
