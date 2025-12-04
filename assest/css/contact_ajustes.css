@@ -113,6 +113,6 @@
 
 @media (max-height: 820) {
     .contact_page {
-       
+        margin: 0;
     }
 }

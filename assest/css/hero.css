@@ -7,10 +7,19 @@
 }
 
 .back_top{
-    display: none;
     position: fixed;
-    top: var(--margen);
+    bottom: -30px;
     left: var(--margen);
+    opacity: 0;
+    
+    a {
+        text-decoration: none;
+        transition: all .5s ease-in-out;
+        color: black;
+       
+    }:hover {
+        color:  black;
+    }
 }
 .header {
     width: 100%;
@@ -72,8 +81,11 @@
         a {
             text-decoration: none;
             color: var(--texto-secundario);
+            transition: all .4s ease-in-out;
         }
-       
+        a:hover {
+            color: #494949;
+        }
         .title_list {
             margin-top: 1rem;
             margin-left: calc(var(--margen) + 1rem);
