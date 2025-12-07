@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+    .about {
+        h1 {
+        }
+        p {
+            width: calc(100vw / 2);
+            margin-right: 0;
+            margin-left: var(--margen-movil);
+            margin-right: var(--margen-movil);
+            align-self: center;
+        }
+        .p1 {
+            align-self: flex-start;
+        } 
+    }
+}
