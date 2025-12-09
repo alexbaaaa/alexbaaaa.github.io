@@ -71,6 +71,7 @@
         }
 
         .section_img {
+            cursor: pointer;
             flex: 1 1;
             transform: translateY(500px);
             background-size: cover;

@@ -1,12 +1,21 @@
 .about {
     width: 100vw;
+    position: absolute;
+    
+    right: 100vw;
+    width: 100vw;
+    background-color: aliceblue;
+    z-index: 9999;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+
     .close_button_about {
-        position: fixed;
+        position: absolute;
         right: var(--margen);
         top: var(--margen);
+        cursor: pointer;
     }
     p {
         width: calc(100vw / 2);
@@ -20,7 +29,7 @@
         margin-left: calc(var(--margen)*3);
     }
     h1 {
-        margin-left: var(--margen);
+        margin-left: calc(var(--margen)*2);
         margin-top: var(--margen);
         font-size: clamp(3.125rem, 1.6331rem + 6.4516vw, 9.375rem);
     }

@@ -14,11 +14,12 @@
     z-index: 99;
     a {
         text-decoration: none;
-        transition: all .5s ease-in-out;
+        transition: all .5s ease;
         color: black;
        
     }:hover {
-        color:  black;
+        color: white;
+        text-shadow: 5px 3px 8px rgba(0,0,0,1);
     }
 }
 .header {

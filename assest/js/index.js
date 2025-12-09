@@ -1,8 +1,10 @@
 import {Anime} from './modules/anime.js';
 
 let contact = document.getElementById("contact");
+let about = document.getElementById("about");
 let contact_button = document.getElementById("contact_button");
-let close_button = document.getElementById("close_button");
+let about_button = document.getElementById("about_button");
+let close_button_about = document.getElementById("close_button_about");
 let open = document.getElementById("open");
 let close = document.getElementById("close");
 let bodyNumberAll = document.querySelectorAll(".body_number");
@@ -14,8 +16,14 @@ let bodyTitle = Array.from(bodyTitleAll);
 contact_button.addEventListener("click", ()=>{
     Anime.curtain(contact, 0, 1);
 });
+about_button.addEventListener("click", ()=>{
+    Anime.curtain(about, 1, 1);
+});
 close_button.addEventListener("click", ()=>{
     Anime.curtain(contact, 1, 0);
+});
+close_button_about.addEventListener("click", ()=>{
+    Anime.curtain(about, 0, 0);
 });
 
 open.addEventListener("click", ()=> {
@@ -76,6 +84,8 @@ gsap.from(".fadeOpen", {
     }
 });
 
+
+
 let img = Array.from(document.querySelectorAll(".section_img"));
 
 img.forEach((img, index) =>{
@@ -92,5 +102,7 @@ img.forEach((img, index) =>{
         }
     });
 })
+
+
 
 

@@ -1,7 +1,5 @@
 @media (max-width: 800px) {
     .about {
-        h1 {
-        }
         p {
             width: calc(100vw / 2);
             margin-right: 0;
