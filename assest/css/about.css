@@ -19,7 +19,7 @@
     }
     p {
         width: calc(100vw / 2);
-        font-size: clamp(1rem, 0.7613rem + 1.0323vw, 2rem);
+        font-size: clamp(1.5rem, 1.3806rem + 0.5161vw, 2rem);
         font-family: 'PlayfairRegular';
         line-height: normal;
         color: var(--texto-secundario);
