@@ -14,30 +14,50 @@ export class Anime {
         })
     }
 
-    static open(open) {
-        gsap.to(".body_number", {
-            x: "-40vw",
-            duration: 1,
-        })
-        gsap.to(".body_title",{
-            left: "2rem",
-            duration: 1
-        });
-
-        open.style.opacity = 0;
-        let close = document.getElementsByClassName("close");
-        Array.from(close).forEach((element) => {
-            element.style.opacity = 1;
-        });
+    static open(sectionAllArray) {
+       
     }
-    static close(open) {
-        
+    static close(sectionAllArray) {
+        sectionAllArray.forEach((section) => {
+            section.addEventListener("click", () => {
+                let text = section.children[0].children[4];
+                let number = section.children[0].children[0];
+                let close = section.children[0].children[3];
+                close.style.display = "none";
+                number.style.display = "flex";
+                let pepe = gsap.timeline({paused: true});
+                pepe.play();
+                pepe.to(text, {
+                    duration: 1,
+                    opacity: 0,
+                    ease: "power2.out",
+                    onComplete: ()=> {
+                        text.style.display = "none";
+                        number.style.display = "flex";
+                    }
+                })
+                .to(number, {
+                    duration: 1,
+                    x: "-100vw",
+                    ease: "power2.out",
+                },"<")
+                .to(section.children[1], {
+                    duration: 1,
+                    scale: 1,
+                    ease: "power2.out",
+                    onComplete() {
+                        gsap.to(window, { scrollTo: section, duration: 0.5 });
+                    }
+                })
+            })
+        });
     }
     static hola() {
         gsap.to(".prueba", {
             x: 100
         })
     }
+
 
        
     

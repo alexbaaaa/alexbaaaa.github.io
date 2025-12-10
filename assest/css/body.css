@@ -19,12 +19,41 @@
             position: relative;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: space-between;
+            justify-content: space-between;          
+            transition: all 1s ease-in-out;
             h1 {
                 font-family: 'InterBold';
                 font-size: clamp(3.125rem, -0.2287rem + 4.878vw, 5.625rem);
                 margin: var(--margen);
                 cursor: pointer;
+                transition: all 1s ease-in-out;
+            }
+            .section_text {
+                display: none;
+                flex: 3;
+                width: 100%;
+                opacity: 0;
+                margin: var(--margen);
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                
+                h2 {
+                    flex: 1;
+                    font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.5rem);
+                    color: black;
+                    font-family: 'PlayfairRegular';
+
+                    span {
+                        font-family: 'PlayfairSemiBold';
+                        color: var(--texto-secundario)
+                    }
+                }
+                p {
+                    flex: 3;
+                    font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.5rem);
+                    font-family: 'PlayfairRegular';
+                    color: black;
+                }
             }
             .open {
                 display: none;
@@ -43,9 +72,7 @@
             }
 
 
-            .section_text {
-                display: none;
-            }
+           
         }
 
         .img01 {

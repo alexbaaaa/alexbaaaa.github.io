@@ -12,7 +12,7 @@
             margin-right: 0;
             margin-left: var(--margen-movil);
             margin-right: var(--margen-movil);
-            align-self: center;
+            align-self: flex-start;
         }
         .p1 {
             align-self: center;

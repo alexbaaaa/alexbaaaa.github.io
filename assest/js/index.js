@@ -1,4 +1,5 @@
 import {Anime} from './modules/anime.js';
+gsap.registerPlugin(ScrollTrigger);
 
 let contact = document.getElementById("contact");
 let about = document.getElementById("about");
@@ -9,6 +10,45 @@ let open = document.getElementById("open");
 let close = document.getElementById("close");
 let bodyNumberAll = document.querySelectorAll(".body_number");
 let bodyTitleAll = document.querySelectorAll(".body_title");
+let sectionAll = document.querySelectorAll(".section");
+
+let tl = gsap.timeline({paused: true});
+/* tl.eventCallback("onReverseComplete", () => {
+    document.querySelector(".extraDiv").style.display = "none";
+}); */
+let sectionAllArray = Array.from(sectionAll);
+
+sectionAllArray.forEach((section) => {
+    section.addEventListener("click", () => {
+        section.children[0].children[4].style.display = "flex";
+        let text = section.children[0].children[4];
+        let number = section.children[0].children[0];
+        let close = section.children[0].children[3];
+        tl.play();
+        tl.to(number, {
+            duration: 1,
+            x: "-100vw",
+            ease: "power2.out",
+            onComplete() {
+                number.style.display = "none";
+                close.style.display = "block";
+            }
+        } )
+        .to(text, {
+            duration: 3,
+            opacity: 1,
+            ease: "power2.out",
+        },"<")
+        .to(section.children[1], {
+            duration: 1,
+            scale: 0.5,
+            ease: "power2.out",
+            onComplete() {
+                gsap.to(window, { scrollTo: section, duration: 0.5 });
+            }
+        },"<")
+    })
+});
 
 let bodyNumber = Array.from(bodyNumberAll);
 let bodyTitle = Array.from(bodyTitleAll);
@@ -30,10 +70,9 @@ open.addEventListener("click", ()=> {
     Anime.open(open);
 })
 close.addEventListener("click", () => {
-    Anime.close(close);
+    Anime.close(sectionAllArray);
+    console.log("hola");
 })
-
-gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".back_top", {
     opacity: 1,
@@ -102,6 +141,8 @@ img.forEach((img, index) =>{
         }
     });
 })
+
+
 
 
 
