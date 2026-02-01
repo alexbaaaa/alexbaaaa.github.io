@@ -14,9 +14,6 @@ export class Anime {
         })
     }
 
-    static open(sectionAllArray) {
-       
-    }
     static close(sectionAllArray) {
         sectionAllArray.forEach((section) => {
             section.addEventListener("click", () => {
@@ -57,10 +54,4 @@ export class Anime {
             x: 100
         })
     }
-
-
-       
-    
-
-
 }
