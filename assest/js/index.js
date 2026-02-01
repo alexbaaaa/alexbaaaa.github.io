@@ -16,6 +16,7 @@ let sectionAllArray = Array.from(sectionAll);
 sectionAllArray.forEach((section) => {
     section.addEventListener("click", () => {
         console.log("hola marta");
+        window.location.href = "carrusel.html";
     })
 });
 

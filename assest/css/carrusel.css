@@ -1,0 +1,57 @@
+.carrusel_content{
+    position: relative;
+    overflow: hidden;
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    .contenido {
+        flex: 1;
+    }
+    .carrusel {
+        flex: 1;
+        background-color: aqua;
+        .img {
+            cursor: pointer;
+            position: absolute;
+            width: calc(100vw/3);
+            height: calc(100vh/2);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .img01 {
+            background-image: url("../img/hero/img01.jpg");
+            top: calc(100vh / 4);
+        }
+        .img02 {
+            background-image: url("../img/hero/img02.jpg");
+            top: calc((100vh / 4 + 50%));
+        }
+        .img03 {
+            background-image: url("../img/hero/img03.jpg");
+            top: 1050px;
+        }
+        .img04 {
+            background-image: url("../img/hero/img04.jpg");
+            top: 1500px;
+        }
+        .img05 {
+            background-image: url("../img/hero/img05.jpg");
+            top: 1950px;
+        }
+        .img06 {
+            background-image: url("../img/hero/img06.png");
+            top: 2400px;
+        }
+        .img07 {
+            background-image: url("../img/hero/img07.jpg");
+            top: 2850px;
+        }
+    }
+
+}
