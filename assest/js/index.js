@@ -93,7 +93,7 @@ bodyNumber.forEach( (bodyNumber, index) => {
         scrollTrigger: {
             trigger: ".S0"+index,
             start: "top center", 
-            toggleActions: "play none none reverse"
+            once: true
         }
     });
 });
@@ -106,7 +106,7 @@ bodyTitle.forEach( (bodyTitle, index) => {
         scrollTrigger: {
             trigger: ".S0"+index,
             start: "top 20%", 
-            toggleActions: "play none none reverse"
+            onec: true
         }
     });
 });
@@ -137,7 +137,7 @@ img.forEach((img, index) =>{
         scrollTrigger: {
             trigger: ".S0"+index,
             start: "top bottom", 
-            toggleActions: "play none none reverse"
+            once: true
         }
     });
 })
