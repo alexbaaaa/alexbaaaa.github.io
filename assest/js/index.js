@@ -1,4 +1,6 @@
 import {Anime} from './modules/anime.js';
+import { updateCarousel } from './modules/carrusel.js';
+
 gsap.registerPlugin(ScrollTrigger);
 
 let contact = document.getElementById("contact");
@@ -13,10 +15,12 @@ let sectionAll = document.querySelectorAll(".section");
 let tl = gsap.timeline({paused: true});
 let sectionAllArray = Array.from(sectionAll);
 
-sectionAllArray.forEach((section) => {
+
+
+sectionAllArray.forEach((section, index) => {
     section.addEventListener("click", () => {
-        console.log("hola marta");
         window.location.href = "carrusel.html";
+        updateCarousel(index);
     })
 });
 

@@ -1,57 +1,52 @@
-.carrusel_content{
-    position: relative;
-    overflow: hidden;
-    background-color: red;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    .contenido {
-        flex: 1;
-    }
-    .carrusel {
-        flex: 1;
-        background-color: aqua;
-        .img {
-            cursor: pointer;
-            position: absolute;
-            width: calc(100vw/3);
-            height: calc(100vh/2);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-
-        }
-
-        .img01 {
-            background-image: url("../img/hero/img01.jpg");
-            top: calc(100vh / 4);
-        }
-        .img02 {
-            background-image: url("../img/hero/img02.jpg");
-            top: calc((100vh / 4 + 50%));
-        }
-        .img03 {
-            background-image: url("../img/hero/img03.jpg");
-            top: 1050px;
-        }
-        .img04 {
-            background-image: url("../img/hero/img04.jpg");
-            top: 1500px;
-        }
-        .img05 {
-            background-image: url("../img/hero/img05.jpg");
-            top: 1950px;
-        }
-        .img06 {
-            background-image: url("../img/hero/img06.png");
-            top: 2400px;
-        }
-        .img07 {
-            background-image: url("../img/hero/img07.jpg");
-            top: 2850px;
-        }
-    }
-
+body {
+  margin: 0;
+  font-family: sans-serif;
 }
+
+.carousel-wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.info-panel {
+  width: 50%;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.slide {
+  width: 520px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(0.9);
+  background-color: red;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+img {
+    width: 520px;
+    height: 400px;
+}
+
