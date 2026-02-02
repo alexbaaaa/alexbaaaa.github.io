@@ -3,7 +3,6 @@ body {
   font-family: sans-serif;
 }
 h1 {
-  border: 1px solid red;
   font-size: 4.5rem;
 }
 h3 {
@@ -30,7 +29,7 @@ p {
   font-family: "PlayfairRegular";
 }
 span {
-  color: #ffa4bf9e;
+  color: black;
 }
 
 .carousel-container {

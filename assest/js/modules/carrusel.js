@@ -37,7 +37,6 @@ export function updateCarousel(index) {
   description.textContent = contenido[index].contenido
   type.textContent = contenido[index].type
   tecnologias.textContent = contenido[index].tecnologias
-  wrapper.style.background = contenido[index].color;
   currentIndex = index;
 }
 

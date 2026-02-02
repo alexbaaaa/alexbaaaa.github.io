@@ -20,7 +20,7 @@ let sectionAllArray = Array.from(sectionAll);
 sectionAllArray.forEach((section, index) => {
     section.addEventListener("click", () => {
         window.location.href = "carrusel.html";
-        updateCarousel(index);
+        
     })
 });
 
