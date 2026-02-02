@@ -2,17 +2,35 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-
+h1 {
+  border: 1px solid red;
+  font-size: 4.5rem;
+}
+h3 {
+  font-family: "PlayfairRegular";
+  color: var(--texto-secundario);
+}
 .carousel-wrapper {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
+
 .info-panel {
   width: 50%;
   padding: 4rem;
   box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  gap:1.5rem; 
+}
+p {
+  font-family: "PlayfairRegular";
+}
+span {
+  color: #ffa4bf9e;
 }
 
 .carousel-container {
@@ -37,9 +55,28 @@ body {
   cursor: pointer;
   opacity: 0.5;
   transform: scale(0.9);
-  background-color: red;
 }
-
+.slide:nth-child(1) {
+  background-image: url("../img/hero/img01.jpg");
+}
+.slide:nth-child(2) {
+  background-image: url("../img/hero/img02.jpg");
+}
+.slide:nth-child(3) {
+  background-image: url("../img/hero/img03.jpg");
+}
+.slide:nth-child(4) {
+  background-image: url("../img/hero/img04.jpg");
+}
+.slide:nth-child(5) {
+  background-image: url("../img/hero/img05.jpg");
+}
+.slide:nth-child(6) {
+  background-image: url("../img/hero/img06.png");
+}
+.slide:nth-child(7) {
+  background-image: url("../img/hero/img07.jpg");
+}
 .slide.active {
   opacity: 1;
   transform: scale(1);

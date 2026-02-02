@@ -1,6 +1,7 @@
 import {contenido} from "./proyects.js";
 const slides = document.querySelectorAll(".slide");
 const track = document.getElementById("track");
+const wrapper = document.getElementById("wrapper");
 const container = document.querySelector(".carousel-container");
 
 let currentIndex = 0;
@@ -32,9 +33,11 @@ export function updateCarousel(index) {
   console.log(contenido[index]);
   const activeSlide = slides[index];
   title.textContent = contenido[index].titulo
+  title.style.color = contenido[index].color
   description.textContent = contenido[index].contenido
-  type.textContent = contenido[index].type;
+  type.textContent = contenido[index].type
   tecnologias.textContent = contenido[index].tecnologias
+  wrapper.style.background = contenido[index].color;
   currentIndex = index;
 }
 
