@@ -3,8 +3,10 @@ const slides = document.querySelectorAll(".slide");
 const track = document.getElementById("track");
 const wrapper = document.getElementById("wrapper");
 const container = document.querySelector(".carousel-container");
+const url = new URLSearchParams(window.location.search);
 
-let currentIndex = 0;
+let currentIndex = url.get("i");
+console.log("hola prueba "+ url.get("i"));
 
 export function updateCarousel(index) {
   const slide = slides[index];
@@ -22,6 +24,7 @@ export function updateCarousel(index) {
     ease: "power3.out"
   });
 
+
   slides.forEach((s, i) => {
     s.classList.toggle("active", i === index);
     gsap.to(s, {
@@ -30,7 +33,9 @@ export function updateCarousel(index) {
       duration: 0.4
     });
   });
-  console.log(contenido[index]);
+
+  
+  
   const activeSlide = slides[index];
   title.textContent = contenido[index].titulo
   title.style.color = contenido[index].color
@@ -47,14 +52,15 @@ slides.forEach((slide, index) => {
 
 // Scroll
 window.addEventListener("wheel", (e) => {
-  if (e.deltaY > 0 && currentIndex < slides.length - 1) {
+  if (e.deltaY > 0 && currentIndex < slides.length - 1 ) {
     updateCarousel(currentIndex + 1);
   } else if (e.deltaY < 0 && currentIndex > 0) {
     updateCarousel(currentIndex - 1);
   }
 });
 
-// Centrar la primera imagen al cargar
+// Centrar la imagen del proyecto seleccionado al cargar
 window.addEventListener("load", () => {
-  updateCarousel(0);
+  slides[url.get("i")].classList.toggle("active");
+  updateCarousel(url.get("i"));
 });
