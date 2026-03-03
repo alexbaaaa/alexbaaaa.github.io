@@ -17,6 +17,7 @@
         top: var(--margen);
         cursor: pointer;
     }
+
     p {
         width: calc(100vw / 2);
         font-size: clamp(1.5rem, 1.3806rem + 0.5161vw, 2rem);
@@ -62,3 +63,4 @@
         flex-flow: column nowrap;
     }
 }
+

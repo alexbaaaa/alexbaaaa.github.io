@@ -6,7 +6,6 @@ const container = document.querySelector(".carousel-container");
 const url = new URLSearchParams(window.location.search);
 
 let currentIndex = url.get("i");
-console.log("hola prueba "+ url.get("i"));
 
 export function updateCarousel(index) {
   const slide = slides[index];
@@ -61,6 +60,5 @@ window.addEventListener("wheel", (e) => {
 
 // Centrar la imagen del proyecto seleccionado al cargar
 window.addEventListener("load", () => {
-  slides[url.get("i")].classList.toggle("active");
   updateCarousel(url.get("i"));
 });

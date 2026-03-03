@@ -41,12 +41,23 @@ close_button_about.addEventListener("click", ()=>{
 });
 
 
+
 gsap.to(".back_top", {
     opacity: 1,
     duration: 1.5,
     y: -50,
     scrollTrigger: {
         trigger: ".body",  
+        start: "top top",           
+        toggleActions: "play none none reverse"
+    }
+});
+gsap.to(".back_top_about", {
+    opacity: 1,
+    duration: 1.5,
+    y: "-1rem",
+    scrollTrigger: {
+        trigger: ".about_journey",  
         start: "top top",           
         toggleActions: "play none none reverse"
     }
