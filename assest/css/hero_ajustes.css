@@ -55,3 +55,33 @@
         }
     }
 }
+
+@media (max-width: 1730px) {
+    .current_album {
+        .current_album_img {
+            img{
+                width: 70%;
+            }
+            h2 {
+                width: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 1460px) {
+    .current_album {
+        height: max-content;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        .current_album_text {
+            flex-basis: 60vh;
+            width: 60%;
+        }
+        .current_album_img {
+            flex:1; 
+            width: 60%;
+        }
+    }
+}
