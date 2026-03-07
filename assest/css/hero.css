@@ -30,8 +30,13 @@
     justify-content: space-between;
     align-content: center;
     .name {
+        flex-basis: 550px;
         margin-left: var(--margen);
         margin-top: var(--margen);
+        h1 {
+            font-family: 'BreezeBold';
+            font-size: 3rem;
+        }
     }
     .menu {
         height: 100%;
@@ -43,15 +48,15 @@
         align-self: flex-start;
         cursor: pointer;
         transition: all 1s ease-in-out;
-
+        a {
+            color: var(--texto-secundario);
+            transition: all .4s ease-in-out;
+        }
+        a:hover {
+            color: #494949;
+        }
     }
     .img_marta {
-        display: none;
-    }
-    .title_proyect_movil {
-        display: none;
-    }
-    .movil_name {
         display: none;
     }
 }
@@ -102,7 +107,12 @@
     .title {
         height: 100%;
         flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
         h2 {
+            align-self: end;
             color: black;
             margin-left: var(--margen);
             cursor: pointer;
@@ -124,68 +134,19 @@
         }
         .title_list {
             margin-top: 1rem;
-            margin-left: calc(var(--margen) + 1rem);
+            margin-left: var(--margen);
             line-height: 1.6rem;
         }
     }
     .feature_proyects {
         flex: 2 4;
-        align-self: flex-start;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: start;
-        margin-left: 5rem;
-        gap: 2.25rem;
-        h2 {
-            flex: 1;
-        }
-        .feature_img {
-            width: 533px;
-            flex: 0 2 68px;
-            transition: all 0.8s ease-in-out;
-            text-decoration: none;
-            overflow: hidden;
-            h3 {
-                color: white;
-                margin-left: var(--margen);
-                position: relative;
-                bottom: -70px;
-                transition: all 0.4s ease-in-out;
-            }
-        }
-        .feature_img:hover {
-            filter: brightness(.7);
-            h3 {
-                bottom: -45px;
-                filter: none;
-            }
-        }
-        :nth-child(2) {
-            background-image: url("../img/hero/img01.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        :nth-child(3) {
-            background-image: url("../img/hero/img03.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        :nth-child(4) {
-            background-image: url("../img/hero/img07.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
+        margin-left: var(--margen);
+        height: 100%;
+        background-image: url("../img/hero/grupo.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-    .copyright {
-        position: absolute;
-        right: var(--margen);
-        bottom: var(--margen);
-    }
+
 }
 
 

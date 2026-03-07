@@ -1,13 +1,7 @@
 import {Anime} from './modules/anime.js';
-import { updateCarousel } from './modules/carrusel.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-let contact = document.getElementById("contact");
-let about = document.getElementById("about");
-let contact_button = document.getElementById("contact_button");
-let about_button = document.getElementById("about_button");
-let close_button_about = document.getElementById("close_button_about");
 let bodyNumberAll = document.querySelectorAll(".body_number");
 let bodyTitleAll = document.querySelectorAll(".body_title");
 let sectionAll = document.querySelectorAll(".section");
@@ -17,28 +11,9 @@ let sectionAllArray = Array.from(sectionAll);
 
 
 
-sectionAllArray.forEach((section, index) => {
-    section.addEventListener("click", () => {
-        window.location.href = "carrusel.html?i="+index;
-        
-    })
-});
-
 let bodyNumber = Array.from(bodyNumberAll);
 let bodyTitle = Array.from(bodyTitleAll);
 
-contact_button.addEventListener("click", ()=>{
-    Anime.curtain(contact, 0, 1);
-});
-about_button.addEventListener("click", ()=>{
-    Anime.curtain(about, 1, 1);
-});
-close_button.addEventListener("click", ()=>{
-    Anime.curtain(contact, 1, 0);
-});
-close_button_about.addEventListener("click", ()=>{
-    Anime.curtain(about, 0, 0);
-});
 
 
 
@@ -52,16 +27,7 @@ gsap.to(".back_top", {
         toggleActions: "play none none reverse"
     }
 });
-gsap.to(".back_top_about", {
-    opacity: 1,
-    duration: 1.5,
-    y: "-1rem",
-    scrollTrigger: {
-        trigger: ".about_journey",  
-        start: "top top",           
-        toggleActions: "play none none reverse"
-    }
-});
+
 bodyNumber.forEach( (bodyNumber, index) => {
     index += 1;
     gsap.from(bodyNumber, {
