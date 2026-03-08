@@ -22,7 +22,7 @@ gsap.to(".back_top", {
     duration: 1.5,
     y: -50,
     scrollTrigger: {
-        trigger: ".body",  
+        trigger: ".about",  
         start: "top top",           
         toggleActions: "play none none reverse"
     }

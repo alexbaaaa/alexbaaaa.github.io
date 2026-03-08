@@ -1,85 +1,101 @@
 .onTour {
     width: 100%;
-    height: 100vh;
+    height: 140vh;
     display: flex;
-    flex-flow: row nowrap;
-    .calendar_content {
+    flex-flow: column nowrap;
+    .onTour_title {
         flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .calendar {
-            width: 70%;
-            height: 70%;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 5px; 
+        width: 50%;
+        margin-left: var(--margen);
+        h1 {
+            font-size: clamp(3.125rem, 1.6331rem + 6.4516vw, 9.375rem);
+        }
+        h2 {
 
-            .select{
-                border: 1px solid black;
-                cursor: pointer;
-            }
-            .select:hover{
-                background-color: var(--texto-secundario);
-            }
-            .out {
-                color: var(--texto-secundario);
-            }
-            .name_day {
-                font-weight: bold;
-                text-align: center;
-                font-size: 2.5rem;
-                margin-bottom: 2rem;
-            }
-
-            .day {
-                padding: 10px;
-                text-align: center;
-                min-height: 50px;
-                font-size: 2rem;
-                border-radius: 50%;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all .4s ease-in-out;
-            }
-            .day:hover {
-                border: 1px solid black;
-                border-radius: 50%;
-            }
         }
     }
-    .ticket {
-        flex: 1;
+    .onTour_content {
+        flex: 3;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-        .buy_ticket {
-            cursor: pointer;
-            width: 80%;
+        flex-flow: row nowrap;
+        .calendar_content {
+            flex: 1;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between; 
-            padding-right: 1rem;
-            padding-left: 1rem;
-            h2 {
-                margin: 1rem 0;
-            }
+            justify-content: center;
+            align-items: center;
+            .calendar {
+                width: 70%;
+                height: 70%;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 5px; 
 
-            :nth-child(1) {
-                color: black;
+                .select{
+                    border: 1px solid black;
+                    cursor: pointer;
+                }
+                .select:hover{
+                    background-color: var(--texto-secundario);
+                }
+                .out {
+                    color: var(--texto-secundario);
+                }
+                .name_day {
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                .day {
+                    padding: 10px;
+                    text-align: center;
+                    min-height: 50px;
+                    font-size: 2rem;
+                    border-radius: 50%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .4s ease-in-out;
+                }
+                .day:hover {
+                    border: 1px solid black;
+                    border-radius: 50%;
+                }
             }
         }
-        
-        .buy_ticket:hover {
-            border-radius: 12px;
-            box-shadow: -2px 8px 26px -4px #000000;
-            transition: all .4s ease-in-out;
-        }
+        .ticket {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .buy_ticket {
+                cursor: pointer;
+                width: 80%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between; 
+                padding-right: 1rem;
+                padding-left: 1rem;
+                h2 {
+                    margin: 1rem 0;
+                }
 
+                :nth-child(1) {
+                    color: black;
+                }
+            }
+            
+            .buy_ticket:hover {
+                border-radius: 12px;
+                box-shadow: -2px 8px 26px -4px #000000;
+                transition: all .4s ease-in-out;
+            }
+
+        }
     }
 
 }
