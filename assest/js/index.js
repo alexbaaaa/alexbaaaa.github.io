@@ -75,5 +75,36 @@ img.forEach((img, index) =>{
 
 
 
+/**---------------- */
+
+let links = document.querySelectorAll(".link");
+
+links.forEach((link) => {
+    link.addEventListener("mouseover", () => {
+        if(link.id.includes("T")){
+            let idLink = link.id.replace("T", "C")
+            let hover = Array.from(links).find((element) => element.id == idLink);
+            hover.style.background = "#A4A4A4";
+        }else {
+            let idLink = link.id.replace("C", "T")
+            let hover = Array.from(links).find((element) => element.id == idLink);
+            hover.style.boxShadow = "-2px 8px 26px -4px #000000";
+        }
+    })
+})
+
+links.forEach((link) => {
+    link.addEventListener("mouseout", () => {
+        if(link.id.includes("T")){
+            let idLink = link.id.replace("T", "C")
+            let hover = Array.from(links).find((element) => element.id == idLink);
+            hover.style.background = "";
+        }else {
+            let idLink = link.id.replace("C", "T")
+            let hover = Array.from(links).find((element) => element.id == idLink);
+            hover.style.boxShadow = "";
+        }
+    })
+})
 
 

@@ -1,8 +1,6 @@
 .about {
-    width: 100vw;   
-    background-color: aliceblue;
-    z-index: 9999;
-
+    width: 100vw;
+    margin-top: 7rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -30,8 +28,31 @@
         margin-top: var(--margen);
         font-size: clamp(3.125rem, 1.6331rem + 6.4516vw, 9.375rem);
     }
-    .p1 {
-        align-self: flex-end ;
+    .members_name {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .p1_img{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        
+        .img_content {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+               width: 500px;
+               margin-right: 0;
+            }
+        }
+        .p1 {
+            flex: 1;
+        }
     }
     .p2 {
         align-self: flex-start;
@@ -48,12 +69,22 @@
         display: flex;
         flex-flow: column nowrap;
     }
-    .about_journey {
+    .about_Dan {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
     }
-    .about_vision {
+    .about_Wayne {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .about_Ben{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .about_Daniel{
         width: 100%;
         display: flex;
         flex-flow: column nowrap;

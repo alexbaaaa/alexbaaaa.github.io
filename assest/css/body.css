@@ -2,70 +2,136 @@
     margin-top: 5rem;
     box-sizing: border-box;
 
-    .S01 {color: #FFA4C0;}
-    .S02 {color: #B89F78;}
-    .S03 {color: #26496C;}
-    .S04 {color: #21A740;}
-    .S05 {color: #9CC72A;}
-    .S06 {color: #A58ADD;}
-    .S07 {color: #00DFF1;}
+    .S01 {color: #403848;}
+    .S02 {color: #8e5801;}
+    .S03 {color: #184060;}
+    .S04 {color: #285038;}
+    .S05 {color: #6b4e00;}
+    .S06 {color: #9b1424}
+    .S07 {color: #e56530;}
 
     .section {
         height: 100vh;
         display: flex;
         overflow: hidden;
+        margin-top: 4rem;
         .section_body {
             flex: 1 1;
             position: relative;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: space-between;          
+            justify-content: space-around; 
+            align-items: first baseline;         
             transition: all 1s ease-in-out;
             h1 {
+                flex: 1;
+                width: 80%;
                 font-family: 'InterBold';
-                font-size: clamp(3.125rem, -0.2287rem + 4.878vw, 5.625rem);
+                font-size: 3rem;
                 margin: var(--margen);
                 cursor: pointer;
                 transition: all 1s ease-in-out;
+                text-align: center;
+                
+            }
+            .feature_song {
+                flex: 1;
+                width: 70%;
+                h2 {
+                    flex: 1;
+                    margin-bottom: 2rem;
+                }
+                .song {
+                    flex: 1;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row nowrap; 
+                    gap: 1rem;
+                    
+                }
             }
         }
 
         .img01 {
-            background-image: url("../img/hero/img01.jpg");
-        }
-        .img02 {
-            background-image: url("../img/hero/img02.jpg");
-        }
-        .img03 {
-            background-image: url("../img/hero/img03.jpg");
-        }
-        .img04 {
-            background-image: url("../img/hero/img04.jpg");
-        }
-        .img05 {
-            background-image: url("../img/hero/img05.jpg");
-        }
-        .img06 {
-            background-image: url("../img/hero/img06.png");
-        }
-        .img07 {
-            background-image: url("../img/hero/img07.jpg");
-        }
-
-        .section_img {
-            cursor: pointer;
-            flex: 1 1;
-            transform: translateY(500px);
+            background-image: url("../img/albums/nigthVision.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+        }
+        .img02 {
+            background-image: url("../img/albums/smoke.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img03 {
+            background-image: url("../img/albums/evole.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img04 {
+            background-image: url("../img/albums/origin.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img05 {
+            background-image: url("../img/albums/act1.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+        .img06 {
+            background-image: url("../img/albums/act2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img07 {
+            background-image: url("../img/albums/loom.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .section_img {
+            flex: 1 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: start;
+            align-items: center;
+            .case {
+                flex: .8;
+                width: 80%;
+                border-radius: 12px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                h2 {
+                    font-family: "InterMedium";
+                }
+                .disc {
+                    width: 500px;
+                    height: 500px;
+                    border-radius: 50% ;
+                    
+                }
+                .title_disc {
+                    color: #403848;
+                    font-size: 2.5rem;
+                }
+            }
+            
         }
 
     }
     .order {
         .section_body {
             order: 1;
-            align-items: end;
         }
         .section_img {
             order: 0;
