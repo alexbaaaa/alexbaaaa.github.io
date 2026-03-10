@@ -54,10 +54,11 @@
             margin-left:calc(var(--margen)*4);
             display: flex;
             flex-flow: column nowrap;
+            align-items: center;
             gap: var(--margen);
             form {
                 flex: 2;
-                width: 50%;
+                width: 80%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: 50px 50px 50px 50px;

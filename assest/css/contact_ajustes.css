@@ -73,11 +73,6 @@
 @media (max-width: 800px) {
     .contact_page {
         .contact_body {
-            .mensage {
-                form {
-                    grid-template-columns: 1fr;
-                }
-            }
         }
         .social_media {
             gap: .5rem;
@@ -123,8 +118,19 @@
         }
         .contact_body {
             .mensage {
-                .form {
-                }
+                margin-left: 0;
+            form {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            form .grid3 {
+                grid-column: 1;
+            }
+
+            form button {
+                grid-column: 1;
+            }
             }
         }
     }
@@ -134,6 +140,16 @@
     .contact_page {
         .contact_title {
             margin-left: 0;
+        }
+        .contact_body {
+            .mensage {
+                margin-left: 0;
+                .form {
+                    div {
+                        background-color: red;
+                    }
+                }
+            }
         }
     }
     .contact_mecha {

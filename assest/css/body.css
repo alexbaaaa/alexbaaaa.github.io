@@ -17,6 +17,8 @@
         margin-top: 5rem;
         .albums_title {
             font-size: clamp(4rem, 3.3137rem + 2.9677vw, 6.875rem);
+            width: 100%;
+            text-align: center;
         }
         .section_body {
             flex: 1 1;

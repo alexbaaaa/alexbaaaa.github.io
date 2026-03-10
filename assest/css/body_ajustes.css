@@ -49,16 +49,3 @@
         }
     }
 }
-@media (max-width: 375px) {
-    .body {
-        .section {
-            .section_body{
-                .description {
-                }
-            }
-            .section_img {
-
-            }
-        }
-    }
-}
