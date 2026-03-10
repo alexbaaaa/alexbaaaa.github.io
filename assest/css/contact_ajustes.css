@@ -131,6 +131,9 @@
 
 @media (max-width:400px) {
     .contact_page {
+        .contact_title {
+            margin-left: 0;
+        }
     }
     .contact_mecha {
         .mecha_title {
