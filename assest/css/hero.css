@@ -145,7 +145,7 @@
         background-image: url("../img/hero/grupo.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
     }
 
 }

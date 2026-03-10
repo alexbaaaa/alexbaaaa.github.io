@@ -102,11 +102,27 @@
 @media (max-width: 520px) {
     .hero{
         .header {
+            .name {
+            }
             .menu{
                 h2 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .hero {
+        background-color: red;
+
+        .header{
+            .menu{
+                h2{
                     font-size: 1rem;
                 }
             }
         }
     }
 }
+
