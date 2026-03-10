@@ -127,4 +127,8 @@ a {
 	text-decoration: none;
 }
 
-/**
+@media (max-width: 1080px) {
+	.back_top {
+		display: none;
+	}
+}
