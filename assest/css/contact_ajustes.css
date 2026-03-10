@@ -110,9 +110,8 @@
         }
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .contact_page {
-        background-color: red;
         .contact_title {
             h1 {
                 font-size: 4rem;
@@ -120,12 +119,40 @@
                     font-size: 3rem;
                 }
             }
-        .contact_body {
-            
         }
+        .contact_body {
+            .mensage {
+                color: red;
+                background-color: blue;
+                .form {
+                    color: pink;
+                }
+            }
         }
     }
 }
+
+@media (max-width:400px) {
+    .contact_page {
+        background-color: pink;
+    }
+    .contact_mecha {
+        .mecha_title {
+            h2 {
+                width: 90%;
+                border: 1px solid red;
+                font-size: 2rem;
+            }
+        }
+        .cards {
+            flex: 1;
+            .body_card {
+                gap: 1rem; 
+            }
+        }
+    }
+}
+
 @media (max-height: 820) {
     .contact_page {
         margin: 0;
