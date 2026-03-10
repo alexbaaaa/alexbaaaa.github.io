@@ -41,8 +41,30 @@
 
     }
 }
+@media (max-width: 570px) {
+    .about > * {
+        p {
+            width: 85%;
+        }
+        background-color: blue;
+    }
+}
 @media (max-width: 375px) {
-    .about {
+    .about > * {
         background-color: red;
+        h1 {
+            text-align: center;
+        }
+        .p1_img{
+            .img_content {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+        p {
+            width: 85%;
+        }
+
     }
 }
