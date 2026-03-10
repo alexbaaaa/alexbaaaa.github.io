@@ -80,6 +80,7 @@
             }
         }
         .social_media {
+            gap: .5rem;
             h2 {
                 display: none;
             }
