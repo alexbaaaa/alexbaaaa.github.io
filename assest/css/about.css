@@ -18,8 +18,8 @@
         font-family: 'PlayfairRegular';
         line-height: normal;
         color: var(--texto-secundario);
-        margin-top: 20vh;
-        margin-bottom: 20vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
         margin-right: calc(var(--margen)*3);
         margin-left: calc(var(--margen)*3);
     }

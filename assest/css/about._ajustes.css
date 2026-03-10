@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     .about {
         h1 {
             width: 100%;
@@ -8,7 +8,6 @@
             align-items: center;
         }
         p {
-            width: calc(100vw / 1.2);
             margin-right: 0;
             margin-left: var(--margen-movil);
             margin-right: var(--margen-movil);
@@ -20,6 +19,30 @@
         } 
         .p2 {
             align-self: center;
+            margin-left: var(--margen);
+            width: 80%;
         }
+    }
+}
+@media (max-width: 1150px) {
+    .about > * {
+        h1 {
+            margin-bottom: 3rem;
+        }
+        .p1_img {
+            flex-flow: column nowrap;
+            .img_content {
+                height: 80%;
+            }
+        }
+        .p2 {
+            display: none;
+        }
+
+    }
+}
+@media (max-width: 375px) {
+    .about {
+        background-color: red;
     }
 }

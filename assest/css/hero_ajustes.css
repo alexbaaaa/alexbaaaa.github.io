@@ -113,16 +113,31 @@
     }
 }
 @media (max-width: 375px) {
-    .hero {
-        background-color: red;
-
+    .hero{
         .header{
             .menu{
                 h2{
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                 }
+            }
+        }
+        .proyect {
+            .feature_proyects {
+                background-size: contain;
             }
         }
     }
 }
 
+/*current album*/
+
+
+@media (max-width: 570px) {
+    .current_album{
+        .current_album_text{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}
