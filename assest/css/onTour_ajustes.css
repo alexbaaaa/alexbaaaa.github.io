@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+    .onTour {
+        .onTour_title {
+            width: 100%;
+            margin-left: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            h1 {
+                font-size: 5rem;
+                margin-left: 0;
+                text-align: center;
+            }
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-left:0 ;
+            }
+        }
+        .onTour_content {
+            .calendar_content{
+                display: none;
+            }
+            .ticket {
+                .buy_ticket {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+}
