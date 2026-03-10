@@ -14,20 +14,19 @@
         height: 100vh;
         display: flex;
         overflow: hidden;
-        margin-top: 4rem;
         .section_body {
             flex: 1 1;
             position: relative;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: space-around; 
-            align-items: first baseline;         
+            justify-content: center; 
+            align-items: center;         
             transition: all 1s ease-in-out;
             h1 {
                 flex: 1;
                 width: 80%;
                 font-family: 'InterBold';
-                font-size: 3rem;
+                font-size: 4rem;
                 margin: var(--margen);
                 cursor: pointer;
                 transition: all 1s ease-in-out;
@@ -100,7 +99,7 @@
             flex: 1 1;
             display: flex;
             flex-flow: column nowrap;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             .case {
                 flex: .8;
@@ -138,4 +137,8 @@
         }
     }
 
+}
+.title_albums {
+    width: 100%;
+    margin-left: calc(var(--margen)*2);
 }
