@@ -3,16 +3,18 @@
     padding: 0;
 }
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     h1 {
         color: cyan;
-        font-size: 23rem;
+        font-size: 10rem;
     }
     p {
         color: rgb(4, 176, 176);
-        font-size: 15rem;
+        font-size: 7rem;
     }
 }
