@@ -11,10 +11,10 @@ body {
     align-items: center;
     h1 {
         color: cyan;
-        font-size: 10rem;
+        font-size: clamp(2rem, -4.897rem + 22.069vi, 10rem);
     }
     p {
         color: rgb(4, 176, 176);
-        font-size: 7rem;
+        font-size: clamp(1rem, -4.172rem + 16.552vi, 7rem);
     }
 }
