@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: cyan;
+        font-size: 23rem;
+    }
+    p {
+        color: rgb(4, 176, 176);
+        font-size: 15rem;
+    }
+}
